@@ -1,0 +1,5 @@
+name: NemesisSystem
+version: 0.1
+author: Strubbel123
+main: me.strubbel.nemesis.NemesisMain
+soft-depend: [WorldEdit]

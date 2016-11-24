@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="worldedit">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/Minecraft/Testbukkit/plugins/worldedit.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Maven: de.pro_crafting:CommandFramework:0.1.1-SNAPSHOT">
+    <archive path="C:/Users/STRUBBEL/.m2/repository/de/pro_crafting/CommandFramework/0.1.1-SNAPSHOT/CommandFramework-0.1.1-SNAPSHOT.jar" />
+  </library>
+  <library name="Maven: org.bukkit:bukkit:1.7.9-R0.1" />
+  <library name="craftbukkit">
+    <archive path="C:/Users/STRUBBEL/Desktop/Minecraft/Testbukkit/craftbukkit.jar" />
+  </library>
+  <library name="worldedit">
+    <archive path="C:/Users/STRUBBEL/Desktop/Minecraft/Testbukkit/plugins/worldedit.jar" />
+  </library>
+</eclipse-userlibraries>
+

@@ -1,0 +1,8 @@
+#Hier lassen sich alle Standartwerte umstellen
+
+#deaktiviert/aktiviert das Teleportieren in die Lobby beim Beitreten
+lobbyspawn: false
+#deaktiviert/aktiviert das automatische Ändern des Wetters
+weather: false
+#Setzt das Prefix, das vor den Nachrichten des Plugins startet
+prefix: '§8[§aNemesisSystem§8]'

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="NemesisSystem">
+    <output-path>$USER_HOME$/Desktop/Minecraft/Testbukkit/plugins</output-path>
+    <root id="root">
+      <element id="archive" name="NemesisSystem.jar">
+        <element id="module-output" name="NemesisSystem" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/java/me/strubbel/nemesis/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
