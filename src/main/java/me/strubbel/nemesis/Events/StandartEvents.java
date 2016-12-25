@@ -1,18 +1,12 @@
 package me.strubbel.nemesis.Events;
 
-import me.strubbel.nemesis.API.YamlManager;
-import me.strubbel.nemesis.NemesisMain;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.World;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.SignChangeEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.weather.WeatherChangeEvent;
+
+import me.strubbel.nemesis.NemesisMain;
 
 public class StandartEvents implements Listener {
     private NemesisMain main;

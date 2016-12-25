@@ -20,7 +20,7 @@ public class NemesisMain extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable(){
-        this.main = this;
+        NemesisMain.main = this;
 
         getConfig().options().copyDefaults(true);
         saveDefaultConfig();

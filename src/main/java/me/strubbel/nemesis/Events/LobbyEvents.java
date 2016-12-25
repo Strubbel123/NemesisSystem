@@ -16,7 +16,8 @@ public class LobbyEvents implements Listener {
     private NemesisMain main;
     private YamlManager yaml;
     private FileConfiguration cfg;
-    private World world;
+    @SuppressWarnings("unused")
+	private World world;
 
     public LobbyEvents(NemesisMain m){
         this.main = m;

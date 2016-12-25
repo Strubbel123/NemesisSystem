@@ -3,9 +3,6 @@ package me.strubbel.nemesis.Events;
 import me.strubbel.nemesis.API.YamlManager;
 import me.strubbel.nemesis.NemesisMain;
 import me.strubbel.nemesis.PlayerStats;
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -15,7 +12,8 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class PlayerStatsEvents implements Listener {
-    private NemesisMain main;
+    @SuppressWarnings("unused")
+	private NemesisMain main;
 
     public PlayerStatsEvents(NemesisMain m){
         this.main = m;

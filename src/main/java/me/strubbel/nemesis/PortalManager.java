@@ -20,7 +20,8 @@ public class PortalManager {
     private WorldEditPlugin worldEdit;
     private YamlManager yaml;
     private FileConfiguration cfg;
-    private NemesisMain main;
+    @SuppressWarnings("unused")
+	private NemesisMain main;
 
     public PortalManager(NemesisMain m){
         this.main = m;
