@@ -14,7 +14,7 @@ public class StandartEvents implements Listener {
     public StandartEvents(NemesisMain m){
         this.main = m;
     }
-
+    
     @EventHandler
     public void onSignChange(SignChangeEvent e) {
         if(e.getPlayer().hasPermission("nemesis.color")){

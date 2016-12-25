@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import java.io.File;
 
 public class SchematicSearchCommand {
-    @Command(name = "search", usage = "/search <name> [directory]", permission="nemesis.search")
+    @Command(name = "search", aliases = { "/schematic.search", "/schem search"}, usage = "/search <name> [directory]", permission="nemesis.search")
     public void delete(CommandArgs args) {
         CommandSender sender = args.getSender();
 
