@@ -11,11 +11,6 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeSet;
 
-import de.pro_crafting.commandframework.*;
-import de.pro_crafting.commandframework.BukkitCommand;
-import de.pro_crafting.commandframework.BukkitCompleter;
-import de.pro_crafting.commandframework.Command;
-import de.pro_crafting.commandframework.CommandArgs;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandMap;
@@ -28,6 +23,7 @@ import org.bukkit.help.HelpTopicComparator;
 import org.bukkit.help.IndexHelpTopic;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.SimplePluginManager;
+
 
 /**
  * Command Framework - CommandFramework <br>

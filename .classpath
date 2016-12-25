@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/__ Windows Standarts/Desktop/plugins/paper.jar"/>
+	<classpathentry kind="lib" path="D:/__ Windows Standarts/Desktop/plugins/worldedit-bukkit-6.1.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
