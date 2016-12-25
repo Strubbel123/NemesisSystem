@@ -50,6 +50,7 @@ public class NemesisMain extends JavaPlugin implements Listener {
         this.framework.registerCommands(new SchematicSearchCommand());
         this.framework.registerCommands(new GamemodeCommand());
         this.framework.registerCommands(new HomeCommands());
+        this.framework.registerCommands(new SchematicCommands());
         this.framework.setInGameOnlyMessage(Util.getPrefix() + " §7Der Befehl muss von einem Spieler ausgeführt werden.");
     }
 
