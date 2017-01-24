@@ -6,6 +6,9 @@ import me.strubbel.nemesis.API.Util;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
+/**
+ * Created by TOBIAS on 23.11.2016.
+ */
 public class FlyCommand {
 
   @Command(name = "fly", usage = "/fly [player]", permission = "nemesis.fly", inGameOnly = true)
@@ -30,6 +33,8 @@ public class FlyCommand {
         }
       } else
         p.sendMessage(Util.getPrefix() + " §7Dieser Spieler existiert nicht.");
+
+
     } else {
       if (!p.getAllowFlight()) {
         Util.enableFly(p);

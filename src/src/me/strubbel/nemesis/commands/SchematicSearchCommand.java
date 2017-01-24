@@ -15,7 +15,7 @@ public class SchematicSearchCommand {
 
     if (!Util.getWorldEdit()) {
       sender
-          .sendMessage(Util.getPrefix() + " §7Du benötigst WorldEdit um diese Funktion zu nutzen.");
+          .sendMessage(Util.getPrefix() + " Â§7Du benÃ¶tigst WorldEdit um diese Funktion zu nutzen.");
       return;
     }
 
@@ -33,7 +33,7 @@ public class SchematicSearchCommand {
       int i = 1;
       for (File file : list) {
         if (file.getName().toLowerCase().contains(name.toLowerCase())) {
-          sender.sendMessage("§8" + i + ". §7" + file.getName());
+          sender.sendMessage("Â§8" + i + ". Â§7" + file.getName());
           i++;
         }
       }

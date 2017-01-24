@@ -5,7 +5,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import de.pro_crafting.commandframework.CommandFramework;
 import me.strubbel.nemesis.API.Util;
-import me.strubbel.nemesis.Events.LobbyEvents;
 import me.strubbel.nemesis.Events.PlayerStatsEvents;
 import me.strubbel.nemesis.Events.PortalEvent;
 import me.strubbel.nemesis.Events.StandartEvents;
@@ -21,7 +20,7 @@ import me.strubbel.nemesis.commands.TeleportCommands;
 
 public class NemesisMain extends JavaPlugin implements Listener {
 
-  public static NemesisMain main;
+  private static NemesisMain main;
 
   public PortalManager portalManager;
   public CommandFramework framework;
@@ -35,8 +34,8 @@ public class NemesisMain extends JavaPlugin implements Listener {
     getConfig().options().copyDefaults(true);
     saveDefaultConfig();
 
-    this.portalManager = new PortalManager();
-    this.prefix = this.getConfig().getString("prefix").replace("&", "§");
+    this.portalManager = new PortalManager(this);
+    this.prefix = this.getConfig().getString("prefix");
 
     this.setupEvents();
     this.setupCommands();
@@ -45,10 +44,9 @@ public class NemesisMain extends JavaPlugin implements Listener {
   }
 
   public void setupEvents() {
-    this.getServer().getPluginManager().registerEvents(new LobbyEvents(this), this);
     this.getServer().getPluginManager().registerEvents(new StandartEvents(this), this);
     this.getServer().getPluginManager().registerEvents(new PortalEvent(this), this);
-    this.getServer().getPluginManager().registerEvents(new PlayerStatsEvents(), this);
+    this.getServer().getPluginManager().registerEvents(new PlayerStatsEvents(this), this);
   }
 
   public void setupCommands() {

@@ -19,24 +19,20 @@ public class GamemodeCommand {
 
           case SURVIVAL:
             p.setGameMode(GameMode.CREATIVE);
-            p.sendMessage(
-                Util.getPrefix() + " §7Dein Spielmodus wurde auf §6Kreativ §7gesetzt.");
+            p.sendMessage(Util.getPrefix() + " §7Dein Spielmodus wurde auf §6Kreativ §7gesetzt.");
             break;
           case ADVENTURE:
             p.setGameMode(GameMode.CREATIVE);
-            p.sendMessage(
-                Util.getPrefix() + " §7Dein Spielmodus wurde auf §6Kreativ §7gesetzt.");
+            p.sendMessage(Util.getPrefix() + " §7Dein Spielmodus wurde auf §6Kreativ §7gesetzt.");
             break;
           case CREATIVE:
             p.setGameMode(GameMode.SURVIVAL);
-            p.sendMessage(
-                Util.getPrefix() + " §7Dein Spielmodus wurde auf §6Überleben §7gesetzt.");
+            p.sendMessage(Util.getPrefix() + " §7Dein Spielmodus wurde auf §6Überleben §7gesetzt.");
             break;
-          // case SPECTATOR:
-          // p.setGameMode(GameMode.CREATIVE);
-          // p.sendMessage(Util.getPrefix() + " §7Dein Spielmodus wurde auf §6Spectator
-          // §7gesetzt.");
-          // break;
+//          case SPECTATOR:
+//            p.setGameMode(GameMode.CREATIVE);
+//            p.sendMessage(Util.getPrefix() + " §7Dein Spielmodus wurde auf §6Spectator §7gesetzt.");
+//            break;
         }
         break;
 
@@ -85,9 +81,9 @@ public class GamemodeCommand {
         case 2:
           gameMode = GameMode.ADVENTURE;
           break;
-        // case 3:
-        // gameMode = GameMode.SPECTATOR;
-        // break;
+//        case 3:
+//          gameMode = GameMode.SPECTATOR;
+//          break;
         default:
       }
       if (gameMode != null)

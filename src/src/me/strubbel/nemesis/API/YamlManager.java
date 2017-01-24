@@ -8,32 +8,32 @@ import org.bukkit.plugin.Plugin;
 import java.io.*;
 import java.util.logging.Level;
 
+import static org.bukkit.Bukkit.getLogger;
+
 public class YamlManager {
-  private Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("nemesissystem");
+  private Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("nemesis");
+
   private FileConfiguration customConfig = null;
   private File customConfigFile;
   private String name;
 
   public YamlManager(String name) {
     this.name = name;
-    this.customConfigFile = new File(this.plugin.getDataFolder(), this.name + ".yml");
-    this.customConfig = YamlConfiguration.loadConfiguration((File) this.customConfigFile);
+    this.customConfigFile = new File(plugin.getDataFolder(), this.name + ".yml");
+    this.customConfig = YamlConfiguration.loadConfiguration(customConfigFile);
   }
 
   public FileConfiguration getCustomConfig() {
-    return this.customConfig;
+    return customConfig;
   }
+
 
   public void saveCustomConfig(FileConfiguration cfg) {
-    this.customConfigFile = new File(this.plugin.getDataFolder(), this.name + ".yml");
+    customConfigFile = new File(plugin.getDataFolder(), this.name + ".yml");
     try {
-      cfg.save(this.customConfigFile);
+      cfg.save(customConfigFile);
     } catch (IOException ex) {
-      Bukkit.getLogger().log(Level.SEVERE, "Could not save config to " + this.customConfigFile, ex);
+      getLogger().log(Level.SEVERE, "Could not save config to " + customConfigFile, ex);
     }
-  }
-
-  public void deleteCustomConfig() {
-    this.customConfigFile.delete();
   }
 }
